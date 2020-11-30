@@ -1,0 +1,119 @@
+@mixin flex-mixin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@font-face {
+  font-family: Estedad;
+  src: url(./Estedad-VF.woff2);
+}
+
+@font-face {
+  font-family: Estedad-FD;
+  src: url(./Estedad-VF-FD.woff2);
+}
+@media screen and (max-width: 600px) {
+  body {
+    direction: rtl;
+    font-family: Estedad-FD;
+    font-size: medium;
+    justify-content: center;
+    @include flex-mixin;
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+  }
+
+  .main-container {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-image: url("./images/background.jpg");
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 20px;
+  }
+
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-wrap: wrap;
+  }
+  .container-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 0px 20px 0px 20px;
+  }
+
+  .container-flex-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    justify-items: center;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+
+  .card-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    direction: row;
+    width: 95vw;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
+  /*# sourceMappingURL=styles(smallscreen).css.map */
+
+
+.container-flex-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.container-flex-5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  justify-items: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.container-1 {
+  display: flex;
+  justify-content: center;
+}
+}
