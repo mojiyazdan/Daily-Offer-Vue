@@ -11,7 +11,7 @@ export default {
   mounted() {
     var interval = setInterval(() => {
       // Here enter the Date!!!
-      var deadline = new Date(2020, 10, 30, 23, 0, 0);
+      var deadline = new Date(2020, 8, 18, 23, 0, 0);
       var now = new Date();
       if (now.valueOf() > deadline.valueOf()) {
         document.getElementById("time").innerHTML = "زمان کد تخفیف گذشت!";
